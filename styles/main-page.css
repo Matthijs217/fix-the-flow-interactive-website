@@ -280,6 +280,7 @@ section {
     z-index: 999;
     align-items: center;
     overflow: hidden;
+    box-shadow: 0px 0px 5px 1000px #1e1e1eca;
 }
 
 ::-webkit-scrollbar {
@@ -303,11 +304,13 @@ section {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+    margin-top: 2vh;
 }
 
 .popup-header-svg h1 {
     position: relative;
     font-size: var(--font-medium);
+    margin: 0;
 }
 
 .popup-header-svg img {
@@ -321,6 +324,7 @@ section {
 .popup-header p {
     width: 80%;
     text-align: center;
+    margin-bottom: 1em;
 }
 
 .popup-main {
@@ -348,6 +352,7 @@ section {
     background-color: #1D1D1D;
 }
 
+
 .popup-message-header {
     display: flex;
     flex-direction: row;
@@ -364,11 +369,11 @@ section {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 10px;
+    padding: 25px;
     button {
         font-family: 'Figtree';
         font-size: 16px;
-        width: 20vw;
+        width: 10em;
         height: 7vh;
         border-radius: 10em;
         background-color: #64AAC7;

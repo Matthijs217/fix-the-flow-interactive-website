@@ -23,7 +23,6 @@ let showPopup = document.querySelectorAll('.comudrops-btn');
 
 showPopup.forEach(button => {
     button.addEventListener('click', () => {
-        console.log('click');
         document.querySelector('.popup').style.display = 'flex';
     });
 });
