@@ -18,18 +18,20 @@ dropDown.addEventListener('click', () => {
     }
 });
 
+// NEGEER DEZE VOOR DE CODE REVIEW ^^
 
-let showPopup = document.querySelectorAll('.comudrops-btn');
+
+let showPopup = document.querySelectorAll('.comudrops-btn'); // selecteer de button
 
 showPopup.forEach(button => {
-    button.addEventListener('click', () => {
-        document.querySelector('.popup').style.display = 'flex';
+    button.addEventListener('click', () => { // als je klikt dan
+        document.querySelector('.popup').style.display = 'flex'; // word de popup display flex en toont die dus
     });
 });
 
-let closePopup = document.querySelector('.popup-header img');
+let closePopup = document.querySelector('.popup-header img'); // selecteert het pijltje terug 
 
-closePopup.addEventListener('click', () => {
-    document.querySelector('.popup').style.display = 'none';
+closePopup.addEventListener('click', () => { // als je klikt dan
+    document.querySelector('.popup').style.display = 'none'; // word de popup display none en is die dus weer weg
 
 });
