@@ -256,7 +256,7 @@ section {
 .opdrachtdetails button:nth-child(1):hover {
     background-color: var(--btn-rouwtaak-1);
     color: var(--text-primary);
-    transform: scale(1.1);
+    transform: scale(1.06);
     cursor: pointer;
 }
 
