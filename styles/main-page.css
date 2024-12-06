@@ -309,7 +309,7 @@ section {
 
 .popup-header-svg h1 {
     position: relative;
-    font-size: var(--font-medium);
+    font-size: var(--font-large);
     margin: 0;
 }
 
@@ -350,6 +350,9 @@ section {
     padding: 1em;
     border-radius: 2em;
     background-color: #1D1D1D;
+    p {
+        margin-left: 1vw;
+    }
 }
 
 
@@ -359,6 +362,7 @@ section {
     align-items: center;
     width: 100%;
     padding: 10px;
+    margin-left: 1vw;
     p {
         margin-left: 1vw;
     }
