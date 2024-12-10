@@ -43,6 +43,7 @@ function popup() {
     document.querySelector('.popup').style.display = 'flex'; // word de popup display flex en toont die dus
 }
 
+
 let closePopup = document.querySelector('.popup-header img'); // selecteert het pijltje terug 
 
 closePopup.addEventListener('click', () => { // als je klikt dan
