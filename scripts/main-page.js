@@ -33,7 +33,11 @@ let showPopup = document.querySelectorAll('.comudrops-btn'); // selecteer de but
 
 showPopup.forEach(button => {
     button.addEventListener('click', () => { // als je klikt dan
-        document.startViewTransition ? document.startViewTransition(popup) : popup()
+        if (document.startViewTransition) {
+            document.startViewTransition(popup)
+        } else {
+            popup()
+        }
     });
 });
 
