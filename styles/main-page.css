@@ -122,12 +122,16 @@ header h1 {
 }
 
 .dropdownarrow {
+    rotate: 0;
     height: 10px;
     position: absolute;
     right: 5vw;
     top: 1.4em;
     color: var(--text-primary);
     font-size: 30px;
+    &.rotate {
+        transform: rotate(180deg);
+    }
 }
 
 /* PROGRESSBAR */
@@ -318,6 +322,9 @@ section {
     align-items: center;
     overflow: hidden;
     box-shadow: 0px 0px 5px 1000px #1e1e1eca;
+    &.visible {
+        display: flex;
+    }
 }
 
 ::-webkit-scrollbar {

@@ -6,7 +6,7 @@ const switchRouwTaken = document.querySelector('.switchrouwtaken'); // Selecteer
 dropDown.addEventListener('click', toggleDropdown);
 
 function toggleDropdown() {
-    const isExpanded = dropDown.style.transform === 'rotate(180deg)';
+    const isExpanded = dropDown.classList.contains('rotate');
 
     if (document.startViewTransition) {
         document.startViewTransition(() => updateDropdown(!isExpanded));
@@ -18,11 +18,11 @@ function toggleDropdown() {
 // Functie om de dropdownstatus te updaten
 function updateDropdown(expand) {
     if (expand) {
-        dropDown.style.transform = 'rotate(180deg)';
+        dropDown.classList.add('rotate'); // Voeg de class 'rotate' toe om de dropdown te roteren
         header.classList.replace('header', 'header2'); // Vervang de originele class van de header met de nieuwe class
         switchRouwTaken.classList.add('visible'); // Voeg de class 'visible' toe om switchRouwTaken te tonen
     } else {
-        dropDown.style.transform = 'rotate(0deg)';
+        dropDown.classList.remove('rotate');
         header.classList.replace('header2', 'header'); // Vervang de originele class van de header met de nieuwe class
         switchRouwTaken.classList.remove('visible'); // Verberg switchRouwTaken
     }
@@ -42,13 +42,13 @@ showPopup.forEach(button => {
 });
 
 function popup() {
-    document.querySelector('.popup').style.display = 'flex'; // word de popup display flex en toont die dus
+    document.querySelector('.popup').classList.add('visible'); // word de popup display flex en toont die dus
 }
 
 
 let closePopup = document.querySelector('.popup-header img'); // selecteert het pijltje terug 
 
 closePopup.addEventListener('click', () => { // als je klikt dan word de popup display none en is die dus weer weg
-    document.querySelector('.popup').style.display = 'none'; 
+    document.querySelector('.popup').classList.remove('visible');
 
 });
