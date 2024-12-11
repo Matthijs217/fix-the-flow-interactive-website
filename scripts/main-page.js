@@ -19,13 +19,11 @@ function toggleDropdown() {
 function updateDropdown(expand) {
     if (expand) {
         dropDown.style.transform = 'rotate(180deg)';
-        header.classList.remove('header'); // Verwijder de originele class van de header
-        header.classList.add('header2'); // Voeg de nieuwe class toe
+        header.classList.replace('header', 'header2'); // Vervang de originele class van de header met de nieuwe class
         switchRouwTaken.style.display = 'flex'; // Toon switchRouwTaken
     } else {
         dropDown.style.transform = 'rotate(0deg)';
-        header.classList.remove('header2'); // Verwijder de nieuwe class van de header
-        header.classList.add('header'); // Voeg de originele class weer toe
+        header.classList.replace('header2', 'header'); // Vervang de originele class van de header met de nieuwe class
         switchRouwTaken.style.display = 'none'; // Verberg switchRouwTaken
     }
 }
