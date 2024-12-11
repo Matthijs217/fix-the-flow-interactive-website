@@ -20,11 +20,11 @@ function updateDropdown(expand) {
     if (expand) {
         dropDown.style.transform = 'rotate(180deg)';
         header.classList.replace('header', 'header2'); // Vervang de originele class van de header met de nieuwe class
-        switchRouwTaken.style.display = 'flex'; // Toon switchRouwTaken
+        switchRouwTaken.classList.add('visible'); // Voeg de class 'visible' toe om switchRouwTaken te tonen
     } else {
         dropDown.style.transform = 'rotate(0deg)';
         header.classList.replace('header2', 'header'); // Vervang de originele class van de header met de nieuwe class
-        switchRouwTaken.style.display = 'none'; // Verberg switchRouwTaken
+        switchRouwTaken.classList.remove('visible'); // Verberg switchRouwTaken
     }
 }
 
@@ -32,10 +32,10 @@ function updateDropdown(expand) {
 let showPopup = document.querySelectorAll('.comudrops-btn'); // selecteer de button
 
 showPopup.forEach(button => {
-    button.addEventListener('click', () => { // als je klikt dan
+    button.addEventListener('click', () => { // als je klikt dan start de transition
         if (document.startViewTransition) {
             document.startViewTransition(popup)
-        } else {
+        } else { // als er geen transition kan word getoond dan word de popup alsnog getoond
             popup()
         }
     });
@@ -48,7 +48,7 @@ function popup() {
 
 let closePopup = document.querySelector('.popup-header img'); // selecteert het pijltje terug 
 
-closePopup.addEventListener('click', () => { // als je klikt dan
-    document.querySelector('.popup').style.display = 'none'; // word de popup display none en is die dus weer weg
+closePopup.addEventListener('click', () => { // als je klikt dan word de popup display none en is die dus weer weg
+    document.querySelector('.popup').style.display = 'none'; 
 
 });

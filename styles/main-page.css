@@ -67,6 +67,9 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     border-top: 2px solid #A6A6A633;
+    &.visible{
+        display: flex;
+    }
 }
 
 .switchrouwtaken p {
