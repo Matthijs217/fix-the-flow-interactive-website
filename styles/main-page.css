@@ -61,6 +61,11 @@ header {
     z-index: 999;
 }
 
+.dropdownheader {
+    display: flex;
+    justify-content: center;
+}
+
 .switchrouwtaken {
     color: var(--text-primary);
     display: none;
@@ -77,10 +82,10 @@ header {
     width: 15vw;
 }
 
-.rtswitch1,
-.rtswitch2,
-.rtswitch3,
-.rtswitch4 {
+.rt1,
+.rt2,
+.rt3,
+.rt4 {
     display: flex;
     flex-direction: column;
 }
@@ -283,6 +288,27 @@ section {
     grid-column: span 2;
 }
 
+.comudrops-btn {
+    position: relative;
+}
+
+.comdropssvgs {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(5%, -50%);
+    display: flex;
+    flex-direction: row;
+    gap: 0.3vw;
+}
+
+.comdropsvg {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
 .opdrachtdetails button {
     padding: 5px 0;
     font-family: var(--ff-figtree);
@@ -470,6 +496,39 @@ section .btn-rouwtaak-1 {
     cursor: pointer;
 }
 
+section .btn-rouwtaak-2 {
+    position: absolute;
+    font-family: var(--ff-figtree);
+    border-radius: var(--pill-btn-border-radius);
+    padding: var(--pill-btn-padding);
+    border: var(--btn-border);
+    top: 38%;
+    right: 2vw;
+    cursor: pointer;
+}
+
+section .btn-rouwtaak-3 {
+    position: absolute;
+    font-family: var(--ff-figtree);
+    border-radius: var(--pill-btn-border-radius);
+    padding: var(--pill-btn-padding);
+    border: var(--btn-border);
+    top: 38%;
+    right: 2vw;
+    cursor: pointer;
+}
+
+section .btn-rouwtaak-4 {
+    position: absolute;
+    font-family: var(--ff-figtree);
+    border-radius: var(--pill-btn-border-radius);
+    padding: var(--pill-btn-padding);
+    border: var(--btn-border);
+    top: 38%;
+    right: 2vw;
+    cursor: pointer;
+}
+
 .btn-rouwtaak-1 {
     color: var(--text-primary);
     background-color: var(--btn-rouwtaak-1);
@@ -490,6 +549,7 @@ section .btn-rouwtaak-1 {
     color: var(--text-primary);
 }
 
+/* RESPONSIVE */
 
 @media (min-width: 750px) {
     
@@ -497,6 +557,9 @@ section .btn-rouwtaak-1 {
         height: 100px;
         width: 100px;
         border-radius: 2vw;
+    }
+    .switchrouwtaken p {
+        font-size: 16px;
     }
     main {
         display: grid;
@@ -532,6 +595,9 @@ section .btn-rouwtaak-1 {
         width: 120px;
         border-radius: 1vw;
     }
+    .switchrouwtaken p {
+        font-size: 16px;
+    }
     header h1 {
         font-size: 48px;
     }
@@ -544,9 +610,6 @@ section .btn-rouwtaak-1 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
-    }
-    section button {
-        right: 1vw;
     }
     .opdrachtdetails, .opdrachtcontent p, .opdrachtcontent h3 {
         margin-left: 1vw;
