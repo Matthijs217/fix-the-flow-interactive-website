@@ -129,6 +129,7 @@ header h1 {
     top: 1.4em;
     color: var(--text-primary);
     font-size: 30px;
+    cursor: pointer;
     &.rotate {
         transform: rotate(180deg);
     }
