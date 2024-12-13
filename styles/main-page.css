@@ -61,11 +61,6 @@ header {
     z-index: 999;
 }
 
-.dropdownheader {
-    display: flex;
-    justify-content: center;
-}
-
 .switchrouwtaken {
     color: var(--text-primary);
     display: none;
@@ -90,7 +85,7 @@ header {
     flex-direction: column;
 }
 
-a {
+.switchrouwtaken a {
     text-decoration: none;
     color: var(--text-primary);
 }
@@ -120,10 +115,6 @@ header h1 {
     font-size: 32px;
     margin-left: 5vw;
     margin-bottom: -2vh;
-}
-
-.dropdownlabel {
-    position: relative;
 }
 
 .dropdownarrow {
@@ -460,6 +451,8 @@ section {
         transform: scale(1.1);
     }
 }
+
+/* NAVIGATIE */
 
 nav {
     position: sticky;
