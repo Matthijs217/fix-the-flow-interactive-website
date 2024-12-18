@@ -1,10 +1,5 @@
 # Fix the flow
 
-Ontwerp en maak voor een opdrachtgever een website op basis van een bestaande huisstijl.
-
-De instructie vind je in: [INSTRUCTIONS](https://github.com/fdnd-task/look-and-feel-corporate-identity/blob/main/docs/INSTRUCTIONS.md)
-
-
 # Drop en Heal | Sprint 5
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 Drop en heal is een website die de rouwverwerking van de mensen tussen 18-26 jaar gaat verbeteren. Deze sprint is er gekeken naar 2 interacties op de website naar aanleiding van vorige sprint is er ook gekeken naar wat interacties en wat responsive problemen.
