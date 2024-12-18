@@ -1,45 +1,35 @@
-# Corporate Identity
+# Fix the flow
 
 Ontwerp en maak voor een opdrachtgever een website op basis van een bestaande huisstijl.
 
 De instructie vind je in: [INSTRUCTIONS](https://github.com/fdnd-task/look-and-feel-corporate-identity/blob/main/docs/INSTRUCTIONS.md)
 
 
-# Drop en Heal | Sprint 4
+# Drop en Heal | Sprint 5
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
-Drop en heal is een website die de rouwverwerking van de mensen tussen 18-26 jaar gaat verbeteren. Deze sprint is er vooral de huisstijl gevolgd en zijn er 4 verschillende versies van de main page gemaakt die geconnect staan aan de verschillende rouwtaken.
+Drop en heal is een website die de rouwverwerking van de mensen tussen 18-26 jaar gaat verbeteren. Deze sprint is er gekeken naar 2 interacties op de website naar aanleiding van vorige sprint is er ook gekeken naar wat interacties en wat responsive problemen.
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 De website kent heel wat pagina's gemaakt met HMTL, CSS en een klein beetje JavaScript. 
-![image](https://github.com/user-attachments/assets/801b156f-90b1-462a-8459-2b3620d614dc)
+![image](https://github.com/user-attachments/assets/21b4cf29-7c64-4545-903e-550ceecebbd9)
+
+Als je wilt wisselen van rouwtaak kan dat bij het pijltje rechtsbovenin. Ik heb ervoor gekomen om er geen label bij te zetten om dat ik dat er mooier uit vond zien en de gebruikers in de "onboarding" al uitleg kregen wat de verschillende rouwtaken zijn. Ik heb er voor gezorgd dat het pijltje uitklapbaar is als feedback voor de gebruiker. Hij klapt 180graden uit om te laten zien dat je de header hebt geopend. 
+![image](https://github.com/user-attachments/assets/aaf209ce-29a6-4bbd-9790-a531706a62c5)
+
+Daarnaast heb ik nog een popup gemaakt voor de **Community Drops**. Dat is een kopje wat mensen kunnen openen om een soort review achter te laten hoe ze deze specifieke opdracht hebben ervaren. Hiermee kan de gebruiker op dit moment dus eerder overgehaald worden om de opdracht toch te doen als hij/zij er tegen op keek. Je ziet dat als je er over heen hoverd dat je dan een cursor krijgt en dat de kleur veranderd. Dit laat zien dat je er op kan klikken. Als je geklikt hebt zal de popup in beeld verschijnen en vult het scherm zich met de content. De achtergrond blijft wazig en zwart. Als je weer terug wilt druk je op het pijltje linksboven om terug te gaan:
+![image](https://github.com/user-attachments/assets/03e4796b-d29c-4478-a9cc-6c87506f2239)
+![image](https://github.com/user-attachments/assets/f432c4df-98ee-498c-ba5e-55552a17ef20)
 
 Hier kan je de website zelf bekijken: https://matthijs217.github.io/look-and-feel-corporate-identity/main-page/main-page-een.html
 
-Om te beginnen bij de home page. Hier is een kleine introductie van Drop & Heal toegevoegd om duidelijk te maken hoe het werkt. Hierna volgt een algemene introductie door de privacy, tools en de rouwtaken. Na de uitleg komt er een vragenlijst, deze vragenlijst gaat later bepalen in welke fase van de rouw jij nu zit. Als de vragenlijst is ingevuld kom je uiteindelijk op jou toegewezen rouwtaak toe. Deze main-page is helemaal in de stemming van die bepaalde rouwtaak en bevat een header waar nog geswitched kan worden van rouwtaak en er zijn opdrachten te vinden. 
-
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
-In het groepje hebben wij in de analyse fase bedacht hoe we deze sprint gingen aanpakken. Wij hebben een styleguide en bijhorende stylesheet ontworpen naar de huisstijl van de opdrachtgever. We hebben nagedacht en feedback meegenomen wat nu de belangrijke punten zijn. Voor ons was dat nu de hoofdpagina en huisstijl namaken. Hieronder de schets:
+De kenmerken van de website bestaan uit HTML, CSS en JavaScript. Ik heb de 2e header die tervoorschijn komt als je op het pijltje klikt gemaakt met een nieuwe class. Javascript veranderd de header class die er nu staan en vervangt hem zodat hij word "uitgeklapt". Als je weer terug gaat verwijderd hij hem weer.
 
-**Schets hoofdpagina:**
-![image](https://github.com/user-attachments/assets/21c0b7ae-a2e0-4dc4-81a2-0a6315d157c2)
-
-## Main page
-
-Wij hebben een hele nieuwe main page gemaakt.
-- De main page volgt een stijl van welke rouwtaak er nu actief is.
-- Je kan via het dropdown menu in de header switchen van huisstijl waarbij dus ook de stijl van de main-page veranderd.
-- Er is een main container waar de opdrachten in komen te staan. Deze opdrachten hebben details zoals de tijd (hoelang duurt de opdracht). Tips van andere gebruikers en community drops waar later nog een soort forum bij komt.
-- Als de pagina breder word (responsive) dan worden de opdrachten verdeeld in meerdere kolommen.
-
-## Bouwen
-
-Voor het bouwen van de website heb ik de breakdown schets overgenomen. Dus de html elementen allemaal correct neergezet. De main-page is heel verschillend van de rest van de website. Dit komt omdat de rest van de website nog een onboarding is die je 1x moet doornemen. De header heeft een functionaliteit van javascript om een dropdown menu te openen. In dit dropdown menu kan je switchen van rouwtaken. De opdrachten staan in een grid met kolommen, hoe breeder de website hoe meer kolommen. 
-
-## Bronnen
+Bij de popup heb ik ervoor gekozen om alles op hidden te zetten. Als hij word geopend dan zal het een nieuwe display flex krijgen. Daarnaast heb ik met javascript ook nog geleerd om een viewtransition toe te voegen op beide interacties wat feedback was vanuit de opdrachtgever en vanuit medestudenten en docenten. Ik heb dit dus mooi kunnen oplossen met de viewtransition API die ik net had geleerd. Hierdoor fade de animatie in, ipv dat hij heel snel tevoorschijn komt.
 
 ## Licentie
 
