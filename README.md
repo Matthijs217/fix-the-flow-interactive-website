@@ -21,10 +21,27 @@ Daarnaast heb ik nog een popup gemaakt voor de **Community Drops**. Dat is een k
 Hier kan je de website zelf bekijken: https://matthijs217.github.io/look-and-feel-corporate-identity/main-page/main-page-een.html
 
 ## Kenmerken
+
+**CSS**
+
+- Ik heb gebruik gemaakt van een viewtransition API, geleerd bij de css challenges.
+https://github.com/Matthijs217/fix-the-flow-interactive-website/blob/main/styles/main-page.css#L12-L40C1
+
+- (weinig) Gebruik gemaakt van nesting in CSS en van hover states
+https://github.com/Matthijs217/fix-the-flow-interactive-website/blob/main/styles/main-page.css#L433-L453
+
+- Mijn popup word flex als hij tevoorschijnt komt, dit word daarna via javascript geregeld
+https://github.com/Matthijs217/fix-the-flow-interactive-website/blob/main/styles/main-page.css#L329-L346
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 De kenmerken van de website bestaan uit HTML, CSS en JavaScript. Ik heb de 2e header die tervoorschijn komt als je op het pijltje klikt gemaakt met een nieuwe class. Javascript veranderd de header class die er nu staan en vervangt hem zodat hij word "uitgeklapt". Als je weer terug gaat verwijderd hij hem weer.
 
-Bij de popup heb ik ervoor gekozen om alles op hidden te zetten. Als hij word geopend dan zal het een nieuwe display flex krijgen. Daarnaast heb ik met javascript ook nog geleerd om een viewtransition toe te voegen op beide interacties wat feedback was vanuit de opdrachtgever en vanuit medestudenten en docenten. Ik heb dit dus mooi kunnen oplossen met de viewtransition API die ik net had geleerd. Hierdoor fade de animatie in, ipv dat hij heel snel tevoorschijn komt.
+**JavaScript**
+
+- Bij de popup heb ik ervoor gekozen om alles op hidden te zetten. Als hij word geopend dan zal het een nieuwe display flex krijgen.
+https://github.com/Matthijs217/fix-the-flow-interactive-website/blob/main/scripts/main-page.js#L44-L46
+
+- Daarnaast heb ik met javascript ook nog geleerd om een viewtransition toe te voegen op beide interacties wat feedback was vanuit de opdrachtgever en vanuit medestudenten en docenten. Ik heb dit dus mooi kunnen oplossen met de viewtransition API die ik net had geleerd. Hierdoor fade de animatie in, ipv dat hij heel snel tevoorschijn komt.
+https://github.com/Matthijs217/fix-the-flow-interactive-website/blob/main/scripts/main-page.js#L35-L38
 
 ## Licentie
 
